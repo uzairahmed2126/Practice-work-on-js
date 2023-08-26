@@ -7,3 +7,7 @@ function normal(){
     return true; //return statement
 }
 console.log(normal()) //Call function
+
+// arrow function
+const arr = (a,b)=>(a*b)
+console.log(arr(1,3))
