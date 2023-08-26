@@ -1,4 +1,4 @@
-// type premitive or nonpremitive
+// type premitive or nonpremitive kyle symption module 2
 // 1.number 2.string 3.boolean 4.undefined 5.null 6.symbol 7.big int
 // Rest are nonpremitive like array object and the function
 
@@ -48,6 +48,7 @@ a1=3 ;
 // NANisNAN //invalid number
 // console.log(isNaN(Number('asdfa')))
 
+// introduction kyle symption module 1
 // prefix and postfix increment and  decrement
 let prf = 2;
 console.log(++prf);
