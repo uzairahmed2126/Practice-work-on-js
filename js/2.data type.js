@@ -45,3 +45,5 @@ console.log(0 < -0);
 console.log(0 == -0);//It's not a true 0 is not equal to -0
 console.log(Object.is(0,-0));
 
+// NANisNAN //invalid number
+console.log(isNaN(Infinity))
