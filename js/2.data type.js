@@ -23,27 +23,39 @@ let smbl2 = Symbol('#$@Q#$')
 
 // nonpremetive
 const arr = [23,'34',true,null,undefined]
-console.log(arr)
+// console.log(arr)
 // const obj = {}
 // const fun = function(){}
 // console.log(typeof fun)
 let arr23;
-console.log(arr23)
+// console.log(arr23)
 
 // undeclare
 let = 89;
-console.log(let)
+// console.log(let)
 
 // uninitilize
 a1=3 ;
-console.log(a1)
+// console.log(a1)
 
 
 // negative 0
-console.log(0 > -0)
-console.log(0 < -0);
-console.log(0 == -0);//It's not a true 0 is not equal to -0
-console.log(Object.is(0,-0));
+// console.log(0 > -0)
+// console.log(0 < -0);
+// console.log(0 == -0);//It's not a true 0 is not equal to -0
+// console.log(Object.is(0,-0));
 
 // NANisNAN //invalid number
-console.log(isNaN(Infinity))
+// console.log(isNaN(Number('asdfa')))
+
+// prefix and postfix increment and  decrement
+let prf = 2;
+console.log(++prf);
+console.log(--prf);
+
+let post = 3
+console.log(post++);
+console.log(post--);
+console.log(post);
+
+
