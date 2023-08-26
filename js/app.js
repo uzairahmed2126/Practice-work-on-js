@@ -4,17 +4,17 @@
 
 
 // ==========
-// function name is a calling statement
-function normal(){
+//1. function name is a calling statement
+function normal() {
     return true; //return statement
 }
 console.log(normal()) //Call function
 // ===========
 
 // ===========
-// arrow function
-const arr = (a,b)=>(a*b)
-console.log(arr(1,3))
+//2. arrow function
+const arr = (a, b) => (a * b)
+console.log(arr(1, 3))
 // ===========
 
 // ===========
@@ -23,9 +23,22 @@ console.log(arr(1,3))
 // ===========
 
 // ===========
-// function expration
-const funExp = function(a,b){
-    return a-b
+//3. function expration
+const funExp = function (a, b) {
+    return a - b
 }
-(3,4)
-console.log(funExp)
+// (3,4)
+// console.log(funExp)
+// ===========
+
+// (function(){
+//     console.log('asdfasdf')
+// })
+// ()
+// ===========
+
+// function naming
+const fnName= function(){
+    console.log('fayyyaz')
+}
+fnName()
