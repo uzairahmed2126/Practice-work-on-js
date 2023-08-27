@@ -14,8 +14,12 @@ console.log(normal()) //Call function
 
 // ===========
 //2. arrow function
-const arr = (a, b) => (a * b)
+const arr = (a, b) => (a - b)
 console.log(arr(1, 3))
+
+
+const addition =(a,b,c)=>(a+b-c)
+console.log(addition(4,5,3))
 // ===========
 
 // ===========
