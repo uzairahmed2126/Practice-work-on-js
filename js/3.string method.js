@@ -103,3 +103,23 @@ console.log(substring.substring(2,4))
 let substR = 'hole'
 console.log(substR.substr(2,3))
 // console.log(substR.length);
+
+// 25.touppercase
+let uppr ='abcdefg'
+console.log(uppr.toUpperCase())
+
+// 26.tolowercase
+let lowr ='ABCDEF'
+console.log(lowr.toLowerCase())
+
+// 27.toLocaleuppercase
+let upprL ='abcdefg'
+console.log(uppr.toLocaleUpperCase())
+
+// 28.tostring 
+let num = 1323;
+console.log(num.toString())
+
+// 29.trim
+let trm = '                fayyaz ur rahmaan'
+console.log(trm.trim(''))
