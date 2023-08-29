@@ -120,6 +120,13 @@ console.log(uppr.toLocaleUpperCase())
 let num = 1323;
 console.log(num.toString())
 
-// 29.trim
+// 29.trim remove the space in the existing string
 let trm = '                fayyaz ur rahmaan'
-console.log(trm.trim(''))
+console.log(trm.trim())
+
+// 30.trimEnd remove the space from the last value in string
+// 31.trimStart remove the space from the starting value in string
+
+// 32.valueOf Default
+let valueOf = 'abcd'
+console.log(valueOf.valueOf())
