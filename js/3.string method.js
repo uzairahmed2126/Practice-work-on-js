@@ -18,3 +18,17 @@ console.log(charCodeat.charCodeAt(1))
 // codePointat as work charCodeAt
 let codePointat = 'Oye chal chai pite'
 console.log(codePointat.codePointAt(6))
+
+// concat
+let firstName = 'Uzair'
+let LastName = 'Ahmed'
+console.log(firstName.concat('\n'+LastName));
+
+// startwith
+let startwith = 'escape sequence'
+console.log(startwith.startsWith('e'))
+
+// endwidth
+let endwith = 'end with'
+console.log(endwith.endsWith('h'))
+
