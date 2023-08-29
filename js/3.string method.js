@@ -89,3 +89,17 @@ console.log(search.search('A'));
 // 21.slice 
 let slic = 'Apple Banana Kivi Pormongrant'
 console.log(slic.slice(12,17))
+
+// 22.split
+let split = 'hello hey'
+console.log(split.split(' '));
+
+// 23.substring it is stop 
+let substring = 'jaane'
+console.log(substring.substring(2,4))
+// console.log(substr.length);
+
+// 24.substr
+let substR = 'hole'
+console.log(substR.substr(2,3))
+// console.log(substR.length);
