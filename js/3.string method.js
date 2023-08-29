@@ -70,4 +70,22 @@ console.log(padstart.padStart(10,'k'));
 let padend = 'fayyaz'
 console.log(padend.padEnd(10,' k'));
 
+// 17.repeat work like loop
+let repeat = 'hey oye hey oye'
+console.log(repeat.repeat(10))
 
+// 18.replace 
+let replace = 'hey you are a bad guy'
+console.log(replace.replace('bad','good'))
+
+// 19.replaceAll 
+let replaceall = 'hey you are a bad guy'
+console.log(replaceall.replaceAll('bad','good'))
+
+// 20.search
+let search ='hey ABCD'
+console.log(search.search('A'));
+
+// 21.slice 
+let slic = 'Apple Banana Kivi Pormongrant'
+console.log(slic.slice(12,17))
