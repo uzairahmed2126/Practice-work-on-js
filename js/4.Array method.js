@@ -70,3 +70,5 @@ let forEch1 = forEch.forEach((e,ind)=>{
     console.log(e,ind)
 })
 
+// 15.from it's broke the string in the each character
+console.log(Array.from('uzair ahmed'))
