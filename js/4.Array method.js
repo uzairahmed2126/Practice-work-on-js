@@ -32,6 +32,41 @@ console.log(som.some((a)=>{
     return a<5
 }))
 
-// 8.actual
+// 8.fill 
+let fill = [0,1,2,3,4,5,6,7]
+console.log(fill.fill('kayda',2,7))
 
+// 9.filter method return the given value as it find
+let filtermethod = [1,2,3,4,4,6,4,3];
+console.log(filtermethod.filter((e)=>{
+    return e>=4;
+}))
+
+// 10.find
+let Find = [1,2,3,4,5,6,7,8];
+console.log(Find.find((e)=>{
+    return e>1;
+}))
+
+// 11.findIndex
+let Findind = [1,2,3,4,5,6,7,8];
+console.log(Findind.findIndex((e)=>{
+    return e<8;
+}))
+
+// 12.findlastIndex
+let Findlast = [1,2,3,4,5,6,7,8];
+console.log(Findlast.findLastIndex((e)=>{
+    return e>1;
+}))
+
+// 13.flat
+var a = [5,10,[[20,30]]]
+console.log(a.flat())
+
+// 14.forEach
+let forEch = [1,2,3,4,5,6,7,8];
+let forEch1 = forEch.forEach((e,ind)=>{
+    console.log(e,ind)
+})
 
