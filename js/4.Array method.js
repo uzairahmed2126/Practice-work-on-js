@@ -21,53 +21,53 @@ let DilJaleAAsiq = entris.entries(entris)
 console.log(DilJaleAAsiq.next().value);
 
 // 6.every it is a callback function and it's throw true and false when it find less then given value is find or not it's depends
-let arrr = [1,2,3,4,5,6]
-console.log(arrr.every((a)=>{
-    return a<5;
+let arrr = [1, 2, 3, 4, 5, 6]
+console.log(arrr.every((a) => {
+    return a < 5;
 }))
 
 // 7.some it is check the all value when it's find same then it's throw true niether false
-let som = [1,2,3,4,5,6]
-console.log(som.some((a)=>{
-    return a<5
+let som = [1, 2, 3, 4, 5, 6]
+console.log(som.some((a) => {
+    return a < 5
 }))
 
 // 8.fill 
-let fill = [0,1,2,3,4,5,6,7]
-console.log(fill.fill('kayda',2,7))
+let fill = [0, 1, 2, 3, 4, 5, 6, 7]
+console.log(fill.fill('kayda', 2, 7))
 
 // 9.filter method return the given value as it find
-let filtermethod = [1,2,3,4,4,6,4,3];
-console.log(filtermethod.filter((e)=>{
-    return e>=4;
+let filtermethod = [1, 2, 3, 4, 4, 6, 4, 3];
+console.log(filtermethod.filter((e) => {
+    return e >= 4;
 }))
 
 // 10.find
-let Find = [1,2,3,4,5,6,7,8];
-console.log(Find.find((e)=>{
-    return e>1;
+let Find = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(Find.find((e) => {
+    return e > 1;
 }))
 
 // 11.findIndex
-let Findind = [1,2,3,4,5,6,7,8];
-console.log(Findind.findIndex((e)=>{
-    return e<8;
+let Findind = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(Findind.findIndex((e) => {
+    return e < 8;
 }))
 
 // 12.findlastIndex
-let Findlast = [1,2,3,4,5,6,7,8];
-console.log(Findlast.findLastIndex((e)=>{
-    return e>1;
+let Findlast = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(Findlast.findLastIndex((e) => {
+    return e > 1;
 }))
 
 // 13.flat
-var a = [5,10,[[20,30]]]
+var a = [5, 10, [[20, 30]]]
 console.log(a.flat())
 
 // 14.forEach
-let forEch = [1,2,3,4,5,6,7,8];
-let forEch1 = forEch.forEach((e,ind)=>{
-    console.log(e,ind)
+let forEch = [1, 2, 3, 4, 5, 6, 7, 8];
+let forEch1 = forEch.forEach((e, ind) => {
+    console.log(e, ind)
 })
 
 // 15.from it's broke the string in the each character
