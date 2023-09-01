@@ -88,4 +88,7 @@ let isarr = [13]
 
 // 19.join 
 let JOIN = ['adnan','fayyaz','uzair']
-console.log(JOIN.join())
+console.log(JOIN.join(' '))
+
+let num = [1,2,3,4]
+console.log(num.join('/'))
