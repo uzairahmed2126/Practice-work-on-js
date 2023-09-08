@@ -49,12 +49,21 @@ const a = new Map([
 // console.log(Object.fromEntries(a))
 
 // 7.getOwnPropertyNames throw the property name
-let firstobj = {a:90,b:'me hu giyaan',c:'Doraemon'}
-console.log(Object.getOwnPropertyNames(firstobj))
+let firstobj = { a: 90, b: 'me hu giyaan', c: 'Doraemon' }
+// console.log(Object.getOwnPropertyNames(firstobj))
 
 // 8.hasown 
-let hasown = {a:'1',b:'adnan you should have to stop the background sound'}
-let hasornot = {a:'1'}
-console.log(Object.hasOwn(hasown,'b'));
+let hasown = { a: '1', b: 'adnan you should have to stop the background sound' }
+let hasornot = { a: '1' }
+// console.log(Object.hasOwn(hasown, 'b'));
 
-// 9.
+// 9.hasOwnProerty It is a check the property is exist or not
+let hasownp = { a: '1', b: 'abcd' }
+// console.log(hasown.hasOwnProperty('c'));
+
+// 10.isfrozen check the value is freeze or not 
+let isfrozen = {a:'hey',b:'hello'}
+Object.freeze(isfrozen)
+// console.log(Object.isFrozen(isfrozen))
+
+// 11.
