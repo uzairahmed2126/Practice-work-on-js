@@ -66,4 +66,34 @@ let isfrozen = {a:'hey',b:'hello'}
 Object.freeze(isfrozen)
 // console.log(Object.isFrozen(isfrozen))
 
-// 11.
+// 11.seal when we seal the object the we can add the object
+let sealM = {a:'hey'}
+Object.seal(sealM)
+delete sealM.a
+// console.log(sealM.a)
+
+// 12.issealed check is sealed or not
+let issealed = sealM
+// console.log(Object.isSealed(issealed))
+
+// 13.keys 
+let key = {property1:'a',property2:'b'}
+// console.log(Object.keys(key))
+
+// 14.preventExtensions
+const object1 = {};
+
+Object.preventExtensions(object1);
+
+try {
+  Object.defineProperty(object1, 'property1', {
+    value: 42,
+  });
+} catch (e) {
+//   console.log(e);
+  // Expected output: TypeError: Cannot define property property1, object is not extensible
+}
+
+// 15.object-prototype-tostring-method
+// let prototypeM = {a:45,b:90}
+// console.log(prototypeM(Object.prototype.toString()))
