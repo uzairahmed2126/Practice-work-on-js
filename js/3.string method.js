@@ -130,3 +130,35 @@ console.log(trm.trim())
 // 32.valueOf Default
 let valueOf = 'abcd'
 console.log(valueOf.valueOf())
+// my logic
+// let a = [];
+    // for (let i = 65; i <= 90; i++) {
+    //     let b = String.fromCharCode([i]);
+    //     a.push(b);
+    // }
+    // textInput.addEventListener('input', (e) => {
+    //     let a = '';
+    //     let arr = [];
+    //     a = e.target.value;
+    //     console.log(a)
+    //     if(a.toUpperCase()){
+    //         a.toLowerCase();
+    //         console.log(a);
+    //     }else if(a.toLowerCase()){
+    //         a.toUpperCase()
+    //     }
+    //     else if(e.target.value===''){
+    //         a.split(' ');
+    //         const sortedField = e.target.innerText;
+    //         productData.sort((a, b) => {
+    //             return a[sortedField] > b[sortedField] ? 1 : -1;
+    
+    //         });
+    //         appendData();
+    //     }
+    //     else{
+    //         console.log('lower')
+    //     }
+    //     arr.push(a);
+    //     console.log(arr)
+    // })
