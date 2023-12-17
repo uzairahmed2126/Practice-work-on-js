@@ -63,7 +63,7 @@ function giveMeSomething(addSomething) {
 // ➞ "something Bob Jane"
 // ➞ "something something"
 
-
+// 5.
 function triArea(base, hieght) {
     return base * hieght / 2
 }
@@ -74,7 +74,7 @@ function triArea(base, hieght) {
 // ➞ 14
 // ➞ 50
 
-
+// 6.
 // `Convert Hours into Seconds`
 function howManySeconds(hours) {
     const oneHour = 60;
@@ -88,7 +88,7 @@ function howManySeconds(hours) {
 //   ➞ 7200
 // ➞ 36000
 // ➞ 86400
-
+// 7.
 function getFirstValue(arr) {
     const firstVal = arr[0];
     // return firstVal;
@@ -107,7 +107,7 @@ function getFirstValue(arr) {
 //   ➞ 1
 // ➞ 80
 // ➞ -500
-
+// 8.
 function nextEdge(num1, num2) {
     const finalAns = num1 + num2 - 1;
     return finalAns;
@@ -119,6 +119,7 @@ function nextEdge(num1, num2) {
 //  ➞ 11
 //  ➞ 10
 
+// 9.
 // `Find the Perimeter of a Rectangle`
 //   `Create a function that takes length and width and finds the perimeter of a rectangle.`
 function findPerimeter(width, hieght) {
@@ -135,7 +136,7 @@ function findPerimeter(width, hieght) {
 // ➞ 22
 
 
-
+// 10.
 // `Return the Remainder from Two Numbers`
 // `There is a single operator in JavaScript, capable of providing the remainder of a division operation. Two numbers are passed as parameters. The first parameter divided by the second parameter will have a remainder, possibly zero. Return that value.`
 function remainder(num1, num2) {
