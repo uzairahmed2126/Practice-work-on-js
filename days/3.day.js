@@ -87,3 +87,38 @@ function divisibleByFive(integer) {
 // console.log(divisibleByFive(-55));
 // console.log(divisibleByFive(37));
 
+// 28 ==> Recursion: Length of a String
+//     Write a function that returns the length of a string. Make your function recursive.
+function length(str) {
+    if (str === '') {
+        return 0;
+    }
+    return 1 + length(str.slice(1));
+}
+// console.log(length("apple"))
+// console.log(length("make"))
+// console.log(length("a"))
+// console.log(length(""))
+
+// 29 ==> Return a String as an Integer
+//     Create a function that takes a string and returns it as an integer.
+function stringInt(int) {
+    // return Number(int);
+    // return Math.abs(int)
+    // return +int
+    // return (int/1);
+    // return int-0;
+    // return int*1;
+}
+// console.log(stringInt("6"))
+// console.log(stringInt("1000"))
+// console.log(stringInt("12"))
+
+
+// 30 ==> Divides Evenly
+//     Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
+function dividesEvenly(a, b) {
+    return a % b == 0;
+}
+console.log(dividesEvenly(98, 7))
+console.log(dividesEvenly(85, 4))
