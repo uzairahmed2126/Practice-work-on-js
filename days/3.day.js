@@ -63,9 +63,27 @@ function isEmpty(str) { return str === ""; }
 // 25 ==> Compare Strings by Count of Characters
 //     Create a function that takes two strings as arguments and return either true or false depending on whether the total number of characters in the first string is equal to the total number of characters in the second string.
 // console.log("25 --->");
-function comp (str1,str2) {
+function comp(str1, str2) {
     return str1.length === str2.length;
 }
-console.log(comp("AB", "CD"));
-console.log(comp("ABD", "DE"));
-console.log(comp("hello", "moien khan"));
+// console.log(comp("AB", "CD"));
+// console.log(comp("ABD", "DE"));
+// console.log(comp("hello", "moien khan"));
+
+// 26 ==> Multiple of 100
+//     Create a function that takes an integer and return true if it's divisible by 100, otherwise return false.
+function divisible(num) {
+    return num % 100 === 0;
+}
+// console.log(divisible(1))
+// console.log(divisible(1000))
+// console.log(divisible(100))
+
+// 27 ==> Check if an Integer is Divisible By Five
+function divisibleByFive(integer) {
+    return integer % 5 == 0;
+}
+// console.log(divisibleByFive(5));
+// console.log(divisibleByFive(-55));
+// console.log(divisibleByFive(37));
+
