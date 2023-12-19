@@ -60,12 +60,14 @@ function footballPoints(wins, draws, losses) {
 // 16 ==> Are the Numbers Equal?
 //     Create a function that returns true when num1 is equal to num2; otherwise return false.
 function isSameNum(num1, num2) {
-    return num1 === num2;
+    // const result = num1 === num2;
+    const result = Object.is(num1, num2);
+    return result;
 }
-// console.log(isSameNum(4, 8))
-// console.log(isSameNum(2, 2))
-// console.log(isSameNum(2, "2"))
-// console.log(isSameNum(0, -0))
+console.log(isSameNum(4, 8))
+console.log(isSameNum(2, 2))
+console.log(isSameNum(2, "2"))
+console.log(isSameNum(0, -0))
 
 
 // 17 return true if number is true
@@ -110,6 +112,6 @@ function convert(hours, minutes) {
 function checkEquality(first, second) {
     return first === second;
 }
-console.log(checkEquality(1, true));
-console.log(checkEquality(0, "0"));
-console.log(checkEquality(1, 1));
+// console.log(checkEquality(1, true));
+// console.log(checkEquality(0, "0"));
+// console.log(checkEquality(1, 1));
