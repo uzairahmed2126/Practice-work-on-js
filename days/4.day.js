@@ -43,7 +43,12 @@ function concatName(firstName, lastName) {
 function posCom(onOff) {
     let pow = 2;
     // return Math.pow(pow, onOff)
-    return pow ** onOff
+    // return pow ** onOff;
+    let outcomes = 1;
+    for (let i = 0; i < onOff; i++) {
+        outcomes = 2 * outcomes;
+    }
+    return outcomes;
 }
 // console.log(posCom(1));
 // console.log(posCom(3));
@@ -59,7 +64,10 @@ function areaShape(base, height, shape) {
     if (shape === "triangle") {
         result = shape + ":" + conditionBase / 2
     }
-    return result = shape + ":" + conditionBase;
+    // const result = shape !== "triangle" ? baseCondition : baseCondition/2;
+    // return result
+    return shape === "triangle" ? shape + ":" + conditionBase / 2 : shape + ":" + conditionBase;
+    // return result = shape + ":" + conditionBase;
 }
 // console.log(areaShape(2, 3, "triangle"));
 // console.log(areaShape(8, 6, "parallelogram"));
@@ -70,6 +78,11 @@ function areaShape(base, height, shape) {
 //     Write a function to reverse an array.
 function reverse(arr) {
     // return arr.reverse();
+    const result = [];
+    for (let i = 0; arr[i] != undefined; i++) {
+        result.push(arr[arr.length - 1 - i]);
+    }
+    return result;
 }
 // console.log(reverse([1, 2, 3, 4]));
 // console.log(reverse([9, 9, 2, 3, 4]));
@@ -85,18 +98,26 @@ function reverse(arr) {
 const arr = [1, 2, 3, 4, 5, 6];
 let a = arr[0];
 let b = arr[1];
+
+// function es6(arr) {
+//     let [a, b] = arr
+//     console.log(a)
+//     console.log(b)
+// }
+// es6([1, 2, 3, 4, 5, 6])
 // console.log(a); // outputs 1
 // console.log(b); // outputs 2
 
 
 // 38 ==> Using Ternary Operators
 //     Write a function that uses the ternary operator to return "yeah" if the condition is true, and "nope" otherwise.
+// sneak case python yeah_nope
 function yeah_nope(trueFalse) {
     // return trueFalse ? "yeah" : "nope";
     if (trueFalse) {
-        return "yeah"
+        return "yeah";
     }
-    return "nope"
+    return "nope";
 }
 // console.log(yeah_nope(true))
 // console.log(yeah_nope(false))
@@ -104,13 +125,14 @@ function yeah_nope(trueFalse) {
 
 // 39 ==> Convert an Array to a String
 //     Create a function that takes an array of numbers or letters and returns a string.
+// arr is open Entity and string is a close entity
 function arrayToString(arr) {
     // return arr.join('');
-    let result = ''
-    for (let i = 0; arr[i] != undefined; i++) {
-        result += arr[i];
-    }
-    return result;
+    // let result = '';
+    // for (let i = 0; arr[i] != undefined; i++) {
+    //     result += arr[i];
+    // }
+    // return result;
 }
 // console.log(arrayToString([1, 2, 3, 4, 5, 6]))
 // console.log(arrayToString(["a", "b", "c", "d", "e", "f"]))
@@ -128,7 +150,8 @@ function getLastItem(arr) {
     //     }
     // }
     // return lastItem;
+    // return arr[arr.length-1];
 }
-console.log(getLastItem([1, 2, 3]))
-console.log(getLastItem(["cat", "dog", "duck"]))
-console.log(getLastItem([true, false, true]))
+console.log(getLastItem([1, 2, 3]));
+console.log(getLastItem(["cat", "dog", "duck"]));
+console.log(getLastItem([true, false, true]));
