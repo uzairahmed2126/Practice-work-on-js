@@ -25,9 +25,9 @@ function profitableGamble(prob, prize, pay) {
 //     frames(10, 25) ➞ 15000
 //     FPS stands for "frames per second" and it's the number of frames a computer screen shows every second.
 //     Assume the screen produces 60 frames every second.
-function frames(num1, num2) {
+function frames(f1, f2) {
     let perSecond = 60;
-    return perSecond * (num1 * num2);
+    return perSecond * (f1 * f2);
 }
 // console.log(frames(1, 1));
 // console.log(frames(10, 1));
@@ -42,7 +42,8 @@ function frames(num1, num2) {
 //     Return true or false.
 //     Some countries have a slightly higher drinking age, but for the purposes of this challenge, it will be 18.
 function shouldServeDrinks(age, yesOrNo) {
-    return age >= 18 && yesOrNo == false;
+    // return age >= 18 && yesOrNo === false;
+    return age >= 18 && !yesOrNo;
 }
 // console.log(shouldServeDrinks(17, true));
 // console.log(shouldServeDrinks(19, false));
@@ -54,7 +55,10 @@ function shouldServeDrinks(age, yesOrNo) {
 //     isEmpty(" ") ➞ false
 //     isEmpty("a") ➞ false
 //     A string containing only whitespaces " " does not count as empty.
-function isEmpty(str) { return str === ""; }
+function isEmpty(str) {
+    // return str === ""; 
+    return str.length === 0;
+}
 // console.log(isEmpty(""));
 // console.log(isEmpty(" "));
 // console.log(isEmpty("a"));
@@ -81,7 +85,7 @@ function divisible(num) {
 
 // 27 ==> Check if an Integer is Divisible By Five
 function divisibleByFive(integer) {
-    return integer % 5 == 0;
+    return integer % 5 === 0;
 }
 // console.log(divisibleByFive(5));
 // console.log(divisibleByFive(-55));
@@ -89,11 +93,16 @@ function divisibleByFive(integer) {
 
 // 28 ==> Recursion: Length of a String
 //     Write a function that returns the length of a string. Make your function recursive.
+let i = 0;
 function length(str) {
+    if (i > 50) {
+        return;
+    }
+    i++;
     if (str === '') {
         return 0;
     }
-    return 1 + length(str.slice(1));
+    return 1 + length(str.slice(0));
 }
 // console.log(length("apple"))
 // console.log(length("make"))
@@ -102,13 +111,14 @@ function length(str) {
 
 // 29 ==> Return a String as an Integer
 //     Create a function that takes a string and returns it as an integer.
-function stringInt(int) {
-    // return Number(int);
-    // return Math.abs(int)
-    // return +int
-    // return (int/1);
-    // return int-0;
-    // return int*1;
+function stringInt(str) {
+    // return Number(str);
+    // return Math.abs(str)
+    // return +str
+    // return (str/1);
+    // return str-0;
+    // return str*1;
+    // return parseInt(str);
 }
 // console.log(stringInt("6"))
 // console.log(stringInt("1000"))
@@ -117,8 +127,9 @@ function stringInt(int) {
 
 // 30 ==> Divides Evenly
 //     Given two integers, a and b, return true if a can be divided evenly by b. Return false otherwise.
-function dividesEvenly(a, b) {
-    return a % b == 0;
+function dividesEvenly(num1, num2) {
+    const divided = num1 / num2;
+    return divided === parseInt(divided);
 }
-console.log(dividesEvenly(98, 7))
-console.log(dividesEvenly(85, 4))
+// console.log(dividesEvenly(98, 7))
+// console.log(dividesEvenly(85, 4))

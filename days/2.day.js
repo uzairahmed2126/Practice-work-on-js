@@ -1,6 +1,7 @@
 // 11 ==> Correct the Mistakes
 function squared(num) {
-    return num * num;
+    // return num ** 2;
+    return Math.pow(num, 2);
 }
 // console.log(squared(5));
 // console.log(squared(9));
@@ -42,7 +43,8 @@ function lessThanOrEqualToZero(number) {
 // 14 ==> Less Than 100?
 //     Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
 function lessThan100(num1, num2) {
-    return (num1 + num2) < 100;
+    const sum = num1 + num2;
+    return sum < 100;
 }
 // console.log(lessThan100(22, 15))
 // console.log(lessThan100(83, 34))
@@ -51,7 +53,7 @@ function lessThan100(num1, num2) {
 //     Create a function that takes the number of wins, draws and losses and calculates the number of points a football team has obtained so far. A win receives 3 points, a draw 1 point and a loss 0 points.    
 function footballPoints(wins, draws, losses) {
     // return wins * 3 + draws * 1 + losses * 0;
-    return (wins * 3) + (draws * 1)
+    return (3 * wins) + (draws);
 }
 // console.log(footballPoints(3, 4, 2))
 // console.log(footballPoints(5, 0, 2))
@@ -71,7 +73,7 @@ console.log(isSameNum(0, -0))
 
 
 // 17 return true if number is true
-function isEven(num) { return num % 2 == 0 }
+function isEven(num) { return num % 2 === 0 }
 // console.log(isEven(2))
 // console.log(isEven(3))
 
@@ -86,7 +88,7 @@ function isEven(num) { return num % 2 == 0 }
 //     animals(5, 2, 8) ➞ 50
 //     Remember that the farmer wants to know the total number of legs and not the total number of animals.
 function animals(chickens, cows, pigs) {
-    return (chickens * 2) + (cows * 4) + (pigs * 4);
+    return (2 * chickens) + 4 * (cows + pigs);
 }
 // console.log(animals(2, 3, 5))
 // console.log(animals(1, 2, 3))
@@ -95,7 +97,7 @@ function animals(chickens, cows, pigs) {
 // 19 ==> Convert Hours and Minutes into Seconds
 //     Write a function that takes two integers (hours, minutes), converts them to seconds, and adds them.
 function convert(hours, minutes) {
-    return (60 * 60 * hours) + (60 * minutes);
+    return 60 * ((60 * hours) + (minutes));
 }
 // console.log(convert(1, 3));
 // console.log(convert(2, 0));
