@@ -79,7 +79,34 @@ function search(arr, findVal) {
     }
     return -1;
 }
-console.log(search([1, 5, 3], 5));
-console.log(search([9, 8, 3], 3));
-console.log(search([1, 2, 3], 4));
-console.log(search(["hi", "edabit", "fgh", "abc"], "fgh"))
+// console.log(search([1, 5, 3], 5));
+// console.log(search([9, 8, 3], 3));
+// console.log(search([1, 2, 3], 4));
+// console.log(search(["hi", "edabit", "fgh", "abc"], "fgh"))
+
+
+// 49 ==> Number of Stickers
+//     Given an n * n * n Rubik's cube, return the number of individual stickers that are needed to cover the whole cube. Keep in mind there are 6 faces to keep track of.
+function howManyStickers(valueOfFaces) {
+    return 6 * (valueOfFaces * valueOfFaces);
+}
+// console.log(howManyStickers(1));
+// console.log(howManyStickers(2));
+// console.log(howManyStickers(3));
+
+
+// 50 ==> Check if an Array Contains a Given Number
+//     Write a function to check if an array contains a particular number.
+function check(arr, containsNum) {
+    // return arr.indexOf(containsNum);
+    for (let i = 0; i < arr.length; i++) {
+        if(arr[i]===containsNum) {
+            return arr[i]
+        }
+    }
+    return "Does Not Exist";
+}
+// console.log(check([1, 2, 3, 4, 5], 3));
+// console.log(check([1, 1, 2, 1, 1], 3));
+// console.log(check([5, 5, 5, 6], 5));
+// console.log(check([], 5));
