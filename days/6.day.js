@@ -124,13 +124,39 @@ function stutter(str) {
     const getFirstTwoVal = str.slice(0, 2);
     const addThreeDotes = getFirstTwoVal.concat('... ').repeat(2).concat(str, "?");
     // return addThreeDotes + ' ' + addThreeDotes + ' ' + str + '?';
-    return addThreeDotes
+    return addThreeDotes;
 }
-console.log(stutter("incredible"));
-console.log(stutter("enthusiastic"));
-console.log(stutter("outstanding"));
-
-
+// console.log(stutter("incredible"));
+// console.log(stutter("enthusiastic"));
+// console.log(stutter("outstanding"));
 // ➞ "in... in... incredible?"
 // ➞ "en... en... enthusiastic?"
 // ➞ "ou... ou... outstanding?"
+
+
+// 57 ==> Is the Word Singular or Plural?
+//     Create a function that takes in a word and determines whether or not it is plural. A plural word is one that ends in "s".
+//         This is an oversimplification of the English language. We are ignoring edge cases like "goose" and "geese", "fungus" and "fungi", etc.
+function isPlural(words) {
+    // for (let i = 0; i < words.length; i++) {
+    //     if (words[i] === 's') {
+    //         // return true;
+    //     };
+    // };
+    // here i using arithmetic operator because the boolean value are only 0 and 1 but here. the answer is not 0 or one that's why i use greater than operation
+    if (words.lastIndexOf('s') > -1) {
+        return Boolean(words.lastIndexOf('s'));
+    };
+    return false;
+    // let a = '234234'
+    // let b = a.valueOf(a.le)==='4';
+    // return b;
+}
+console.log(isPlural("changes"));
+console.log(isPlural("change"));
+console.log(isPlural("dudes"));
+console.log(isPlural("magic"));
+// ➞ true
+// ➞ false
+// ➞ true
+// ➞ false
