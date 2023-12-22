@@ -145,7 +145,8 @@ function isPlural(words) {
     // };
     // here i using arithmetic operator because the boolean value are only 0 and 1 but here. the answer is not 0 or one that's why i use greater than operation
     if (words.lastIndexOf('s') > -1) {
-        return Boolean(words.lastIndexOf('s'));
+        // return Boolean(words.lastIndexOf('s'));
+        return words !== false;
     };
     return false;
     // let a = '234234'
