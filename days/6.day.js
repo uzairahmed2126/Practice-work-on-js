@@ -153,11 +153,39 @@ function isPlural(words) {
     // let b = a.valueOf(a.le)==='4';
     // return b;
 }
-console.log(isPlural("changes"));
-console.log(isPlural("change"));
-console.log(isPlural("dudes"));
-console.log(isPlural("magic"));
+// console.log(isPlural("changes"));
+// console.log(isPlural("change"));
+// console.log(isPlural("dudes"));
+// console.log(isPlural("magic"));
 // ➞ true
 // ➞ false
 // ➞ true
 // ➞ false
+
+
+// 58 ==> Four Passengers and a Driver
+//     A typical car can hold 4 passengers and 1 driver, overall allowing 5 people to travel around. Given n number of people, return how many cars are needed to seat everyone comfortably.
+function carsNeeded(passengers) {
+    const passengersCanSeat = 5;
+    let cars = 0;
+    cars = passengers / passengersCanSeat;
+    return Math.ceil(cars);
+}
+// console.log(carsNeeded(5));
+// console.log(carsNeeded(11));
+// console.log(carsNeeded(2));
+// console.log(carsNeeded(0));
+
+// ➞ 1
+// ➞ 3
+// ➞ 0
+
+// 59 ==> ES6: Destructuring Arrays IV
+//     There is an easy way to assign to array values to the nth index by using the Rest element.
+//     But how could I make tail = [2, 3, 4] instead of tail = 2?
+function headTail() {
+    var [head, tail] = [1, 2, 3, 4];
+    console.log(head);
+    console.log(tail);
+}
+headTail()
