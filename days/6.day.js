@@ -105,7 +105,32 @@ function cityFacts(obj) {
 
 // 55 ==> Volume of a Box
 //     Create a function that takes an object argument sizes (contains width, length, height keys) and returns the volume of the box.
-//         volumeOfBox({ width: 2, length: 5, height: 1 }) ➞ 10
-//         volumeOfBox({ width: 4, length: 2, height: 2 }) ➞ 16
-//         volumeOfBox({ width: 2, length: 3, height: 5 }) ➞ 30
 //     Volume is length * width * height.
+
+function volumeOfBox(area) {
+    return area.width * area.length * area.height;
+}
+// console.log(volumeOfBox({ width: 2, length: 5, height: 1 }));
+// console.log(volumeOfBox({ width: 4, length: 2, height: 2 }));
+// console.log(volumeOfBox({ width: 2, length: 3, height: 5 }));
+// ➞ 10
+// ➞ 16
+// ➞ 30
+
+// 56 ==> Stuttering Function
+//     Write a function that stutters a word as if someone is struggling to read it. The first two letters are repeated twice with an ellipsis ... and space after each, and then the word is pronounced with a question mark ?.
+
+function stutter(str) {
+    const getFirstTwoVal = str.slice(0, 2);
+    const addThreeDotes = getFirstTwoVal.concat('... ').repeat(2).concat(str, "?");
+    // return addThreeDotes + ' ' + addThreeDotes + ' ' + str + '?';
+    return addThreeDotes
+}
+console.log(stutter("incredible"));
+console.log(stutter("enthusiastic"));
+console.log(stutter("outstanding"));
+
+
+// ➞ "in... in... incredible?"
+// ➞ "en... en... enthusiastic?"
+// ➞ "ou... ou... outstanding?"
