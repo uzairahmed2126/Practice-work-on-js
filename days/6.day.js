@@ -188,4 +188,14 @@ function headTail() {
     console.log(head);
     console.log(tail);
 }
-headTail()
+// headTail()
+
+// 60 ==> ES6: Destructuring Arrays III
+//     You can assign variables from arrays with destructuring like this:
+//     But you can also skip over items in the array being destructured. (takeout only lips)
+function bodyParts () {
+    const arr = ["eyes", "nose", "lips", "ears"];
+    let [eyes, nose, lips, ears] = arr;
+    console.log(lips)
+}
+bodyParts()
