@@ -198,4 +198,4 @@ function bodyParts () {
     let [eyes, nose, lips, ears] = arr;
     console.log(lips)
 }
-bodyParts()
+// bodyParts();
