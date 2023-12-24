@@ -15,3 +15,19 @@ function getFilename(path) {
 // ➞ "edabit.txt"
 // ➞ "Beethoven_5.mp3"
 // ➞ "ffprobe.exe"
+
+// 72 ==> Nth Star Number
+//  Create a function that takes a positive integer and returns the nth "star number".
+//  A star number is a centered figurate number a centered hexagram (six-pointed star), such as the one that Chinese checkers is played on.
+function starNumber(n) {
+    if (typeof n !== 'number' || n <= 0 || !Number.isInteger(n)) {
+        return "Please provide a positive integer.";
+    };
+    return 6 * n * (n - 1) + 1;
+}
+console.log(starNumber(2));
+console.log(starNumber(3));
+console.log(starNumber(5));
+// ➞ 13
+// ➞ 37
+// ➞ 121
