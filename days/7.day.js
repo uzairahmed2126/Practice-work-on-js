@@ -51,9 +51,9 @@ function nSidedShape(sides) {
     let shapes = ["circle", "semi-circle", "triangle", "square", "pentagon", "hexagon", "heptagon", "octagon", "nonagon", "decagon"];
     return shapes[sides - 1];
 }
-console.log(nSidedShape(3));
-console.log(nSidedShape(1));
-console.log(nSidedShape(9));
+// console.log(nSidedShape(3));
+// console.log(nSidedShape(1));
+// console.log(nSidedShape(9));
 // ➞ "triangle"
 // ➞ "circle"
 // ➞ "nonagon"
@@ -63,51 +63,109 @@ console.log(nSidedShape(9));
 // 65 ==> Multiply Every Array Item by Two
 //     Create a function that takes an array with numbers and return an array with the elements multiplied by two.
 function getMultipliedArr(arr) {
-    // let result =  arr[arr.length - 1] * 2;
-    // return result;
-    // let filterdArr = arr.filter(function (index,item,arr) {
-    //     return arr[item];
+
+    // let flatedArr = arr();
+    // return flatedArr;
+    // let filterdArr = arr.map(function (index,item,arr) {
+    //     return arr[item]*2;
     // });
-    // return filterdArr
-    let result = []
-    for (let i = 0; i < arr.length; i++) {
-        result.push(arr[i] * 2)
-    }
-    return result
+    // return filterdArr;
+    // let result = []
+    // for (let i = 0; i < arr.length; i++) {
+    //     result.push(arr[i] * 2)
+    // }
+    // return result
 }
-console.log(getMultipliedArr([2, 5, 3]));
-console.log(getMultipliedArr([1, 86, -5]));
-console.log(getMultipliedArr([5, 382, 0]));
+// console.log(getMultipliedArr([2, 5, 3]));
+// console.log(getMultipliedArr([1, 86, -5]));
+// console.log(getMultipliedArr([5, 382, 0]));
 // ➞ [4, 10, 6]
 // ➞ [2, 172, -10]
 // ➞ [10, 764, 0]
 // 66 ==> Burrrrrrrp
 //     Create a function that returns the string "Burp" with the amount of "r's" determined by the input parameters of the function.
-//         longBurp(3) ➞ "Burrrp"
-//         longBurp(5) ➞ "Burrrrrp"
-//         longBurp(9) ➞ "Burrrrrrrrrp"
+function longBurp(number) {
+    let result = 'r';
+    // for (let i = 0; i < number; i++) {
+    //         result += 'r';
+    // }
+    // return `Bu${result}p`;
+    return 'Bu' + result.repeat(number).concat('p');
+}
+// console.log(longBurp(3));
+// console.log(longBurp(5));
+// console.log(longBurp(9));
+// ➞ "Burrrp"
+// ➞ "Burrrrrp"
+// ➞ "Burrrrrrrrrp"
 // 67 ==> ES6: Destructuring Objects
 //     Using basic object destructuring you can assign variables name and email:
 //         let { name, email } = { name: "John", email: "john@example.com" }
 //         console.log(name)  // "John"
 //         console.log(email)  // "john@example.com"
 //     What if there were more properties but you didn't want to write variables for all of them and just wanted to stick them into another object and do something like this:
-//         let { name, email, rest} = { name: "John", email: "john@example.com", city: "Phoenix", state: "AZ", country: "USA"}
-//         rest ===  { city: "Phoenix", state: "AZ", country: "USA"} // true
+
+function obj() {
+    let { name, email, ...rest } = { name: "John", email: "john@example.com", city: "Phoenix", state: "AZ", country: "USA" };
+    // rest == { city: "Phoenix", state: "AZ", country: "USA" };
+    return rest;
+}
+// console.log(obj());
+
 // 68 ==> Char-to-ASCII
 //     Create a function that returns the ASCII value of the passed in character.
-//         ctoa("A") ➞ 65
-//         ctoa("m") ➞ 109
-//         ctoa("[") ➞ 91
-//         ctoa("\") ➞ 92
+function ctoa(char) {
+    // return char.charCodeAt(char);
+}
+// console.log(ctoa("A")); 
+// console.log(ctoa("m")); 
+// console.log(ctoa("[")); 
+// console.log(ctoa('\\')); 
+// ➞ 65
+// ➞ 109
+// ➞ 91
+// ➞ 92
 // 69 ==> Free Coffee Cups
 //     For each of the 6 coffee cups I buy, I get a 7th cup free. In total, I get 7 cups. Create a function that takes n cups bought and return as an integer the total number of cups I would get.
-//         totalCups(6) ➞ 7
-//         totalCups(12) ➞ 14
-//         totalCups(213) ➞ 248
+function totalCups(numberOfCups) {
+    let result = 0;
+    if (numberOfCups <= 6) {
+        result = numberOfCups + 1;
+    } else {
+        result = numberOfCups / 6 * 7;
+    }
+    return parseInt(result);
+}
+// console.log(totalCups(6));
+// console.log(totalCups(12));
+// console.log(totalCups(213));
+// ➞ 7
+// ➞ 14
+// ➞ 248
 // 70 ==> Array of Word Lengths
 //     Create a function that takes an array of words and transforms it into an array of each word's length.
-//         wordLengths(["hello", "world"]) ➞ [5, 5]
-//         wordLengths(["Halloween", "Thanksgiving", "Christmas"]) ➞ [9, 12, 9]
-//         wordLengths(["She", "sells", "seashells", "down", "by", "the", "seashore"]) ➞ [3, 5, 9, 4, 2, 3, 8]
+function wordLengths(arr) {
+    let result = [];
+    // arr.filter((arr, item, index) => {
+    //     result.push(arr.length);
+    // });
+    // return result;
+
+    // let a =  [123];
+    // let b= 0;
+    // a.filter((arr, item, index)=>{
+    //     b = arr;
+    // }) 
+    // return b;
+    for (let i = 0; arr[i] != undefined; i++) {
+        result.push(arr[i].length);
+    }
+    return result;
+}
+console.log(wordLengths(["hello", "world"]));
+console.log(wordLengths(["Halloween", "Thanksgiving", "Christmas"]));
+console.log(wordLengths(["She", "sells", "seashells", "down", "by", "the", "seashore"]));
+// ➞ [5, 5]
+// ➞ [9, 12, 9]
+// ➞ [3, 5, 9, 4, 2, 3, 8]
 
