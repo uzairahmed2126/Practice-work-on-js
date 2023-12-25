@@ -11,9 +11,13 @@ function isOdd(num) {
 // 42 ==> Flip the Boolean
 //     Due to a programming concept known as truthiness, certain values can be evaluated to (i.e. take the place of) booleans. For example, 1 (or any number other than 0) is often equivalent to true, and 0 is often equivalent to false.
 //     Create a function that returns the opposite of the given boolean, as a number.
-function flipBaloon(value) {
-    return !value;
-    // return Number(!value);
+function flipBaloon(number) {
+
+    const reversedBool = !number;
+    // return Number(!reversedBool);
+    const finalResult = +reversedBool;
+    return +!number
+
 }
 // console.log(flipBaloon(true));
 // console.log(flipBaloon(false));
@@ -61,7 +65,9 @@ function newWord(str) {
 // 47 ==> Concatenating Two Integer Arrays
 //     Create a function to concatenate two integer arrays.
 function concat(firstArr, secondArr) {
-    return firstArr.concat(secondArr);
+    // return firstArr.concat(secondArr);
+    // return [...firstArr, ...secondArr]
+    // return [firstArr,secondArr].flat();
 }
 // console.log(concat([1, 3, 5], [2, 6, 8]));
 // console.log(concat([7, 8], [10, 9, 1, 1, 2]));
@@ -70,14 +76,15 @@ function concat(firstArr, secondArr) {
 // 48 ==> Find the Index (Part 1)
 //     Create a function that finds the index of a given item. If the item is not present, return -1.
 function search(arr, findVal) {
-    let result = 0;
-    // result = arr.indexOf(findVal)
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] == findVal) {
-            return i;
-        }
-    }
-    return -1;
+    // let result = 0;
+    // // result = arr.indexOf(findVal)
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] == findVal) {
+    //         return i;
+    //     }
+    // }
+    // return -1;
+    return arr.includes(findVal);
 }
 // console.log(search([1, 5, 3], 5));
 // console.log(search([9, 8, 3], 3));
@@ -100,7 +107,7 @@ function howManyStickers(valueOfFaces) {
 function check(arr, containsNum) {
     // return arr.indexOf(containsNum);
     for (let i = 0; i < arr.length; i++) {
-        if(arr[i]===containsNum) {
+        if (arr[i] === containsNum) {
             return arr[i]
         }
     }

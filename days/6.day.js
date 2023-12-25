@@ -43,6 +43,18 @@ function getContainer(products) {
         return 'null';
     };
 };
+// function returnFromContainer(str) {
+//     const newStr = str.trim().toLowerCase();
+//   const container = {
+//     bread: "bag",
+//     beer: "bottle",
+//     canday: "plastic",
+//     cheese: null,
+//   };
+//   // dot annotation -> obj.
+//   // bracket annotation -> obj[]
+//   return container[newStr];
+// }
 // console.log(getContainer("Bread"));//bag
 // console.log(getContainer("Beer"));//bottle
 // console.log(getContainer("Candy"));//plastic
@@ -84,6 +96,7 @@ function cityFacts(obj) {
         return `${obj.name} has a population of ${obj.population}`;
     }
     return `${obj.name} has a population of ${obj.population}  and is situated in ${obj.continent}`;
+    // return `${obj.name} Has Population Of ${obj.population} ${(obj.continent) ?  ' and is situated in '+(obj.continent) : ''}`
 }
 // console.log(cityFacts({
 //     name: "Paris",
@@ -149,9 +162,6 @@ function isPlural(words) {
         return words !== false;
     };
     return false;
-    // let a = '234234'
-    // let b = a.valueOf(a.le)==='4';
-    // return b;
 }
 // console.log(isPlural("changes"));
 // console.log(isPlural("change"));
@@ -184,7 +194,7 @@ function carsNeeded(passengers) {
 //     There is an easy way to assign to array values to the nth index by using the Rest element.
 //     But how could I make tail = [2, 3, 4] instead of tail = 2?
 function headTail() {
-    var [head, tail] = [1, 2, 3, 4];
+    var [head, ...tail] = [1, 2, 3, 4];
     console.log(head);
     console.log(tail);
 }
@@ -193,7 +203,7 @@ function headTail() {
 // 60 ==> ES6: Destructuring Arrays III
 //     You can assign variables from arrays with destructuring like this:
 //     But you can also skip over items in the array being destructured. (takeout only lips)
-function bodyParts () {
+function bodyParts() {
     const arr = ["eyes", "nose", "lips", "ears"];
     let [eyes, nose, lips, ears] = arr;
     console.log(lips)

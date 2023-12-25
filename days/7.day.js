@@ -11,15 +11,15 @@ function validation() {
 // validation();
 // 62 ==> Default Mood
 //     Create a function that takes in a current mood and return a sentence in the following format: "Today, I am feeling {mood}". However, if no argument is passed, return "Today, I am feeling neutral".
-function moodToday(moods) {
-    if (moods) {
-        return `Today, I am feeling ${moods}`
-    }
-    return `Today, I am feeling neutral`
+function moodToday(moods = "nuetral") {
+    // if (moods) {
+    return `Today, I am feeling ${moods}`
+    // }
+    // return `Today, I am feeling neutral`
 }
-// console.log(moodToday("happy"));
-// console.log(moodToday("sad"));
-// console.log(moodToday());
+console.log(moodToday("happy"));
+console.log(moodToday("sad"));
+console.log(moodToday());
 // ➞ "Today, I am feeling happy"
 // ➞ "Today, I am feeling sad"
 // ➞ "Today, I am feeling neutral"
@@ -63,9 +63,6 @@ function nSidedShape(sides) {
 // 65 ==> Multiply Every Array Item by Two
 //     Create a function that takes an array with numbers and return an array with the elements multiplied by two.
 function getMultipliedArr(arr) {
-
-    // let flatedArr = arr();
-    // return flatedArr;
     // let filterdArr = arr.map(function (index,item,arr) {
     //     return arr[item]*2;
     // });
@@ -134,11 +131,12 @@ function totalCups(numberOfCups) {
     } else {
         result = numberOfCups / 6 * 7;
     }
-    return parseInt(result);
+    // return parseInt(result);
+    return numberOfCups + (Math.floor(numberOfCups / 6))
 }
-// console.log(totalCups(6));
-// console.log(totalCups(12));
-// console.log(totalCups(213));
+console.log(totalCups(6));
+console.log(totalCups(12));
+console.log(totalCups(213));
 // ➞ 7
 // ➞ 14
 // ➞ 248
@@ -168,4 +166,23 @@ console.log(wordLengths(["She", "sells", "seashells", "down", "by", "the", "seas
 // ➞ [5, 5]
 // ➞ [9, 12, 9]
 // ➞ [3, 5, 9, 4, 2, 3, 8]
+
+
+// 71 ==> Get the File Name
+//     Create a function that returns the selected filename from a path. Include the extension in your answer.
+function getFilename(path) {
+    let splitedArr = path.split("/");
+    // let result = '';
+    // for (let i = 0; i < splitedArr.length; i++) {
+    //     result = splitedArr[i]
+    // }
+    // return result;
+    // return splitedArr[splitedArr.length - 1];
+};
+// console.log(getFilename("C:/Projects/pil_tests/ascii/edabit.txt"));
+// console.log(getFilename("C:/Users/johnsmith/Music/Beethoven_5.mp3"));
+// console.log(getFilename("ffprobe.exe"));
+// ➞ "edabit.txt"
+// ➞ "Beethoven_5.mp3"
+// ➞ "ffprobe.exe"
 
