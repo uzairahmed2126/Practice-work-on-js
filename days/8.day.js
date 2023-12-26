@@ -204,7 +204,7 @@ function scoreCalculator(easy, medium, hard) {
     let totalPoints = (5 * easy) + (10 * medium) + (20 * hard);
     return totalPoints > 0 ? totalPoints : "invalid";
 
-};
+}
 // console.log(scoreCalculator(1, 2, 3));
 // console.log(scoreCalculator(1, 0, 10));
 // console.log(scoreCalculator(5, 2, -6));
